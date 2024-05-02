@@ -1,0 +1,77 @@
+//Font
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+//Color
+
+$white:#fff;
+$black: #1D2939;
+$dark-black: #2D2D2D;
+$body: #4C516D;
+$dark-blue: #1E293B;
+$grey-shade: #F7F7FA;
+$grey-shade2: #F4F4F4;
+
+$green-shade: #00b69b1a;
+$bg-shade: #F2F6F9;
+$stock : #EBE7E7;
+$stock-light : #EBEBEB;
+$orange : #FF6C40;
+$orange-light : #FEE2DB;
+$orange-shade: #FCF1F1;
+$orange-light : #FCDCD3;
+$cyan : #90ADD9;
+$cyan-light : #F9FAFB;
+$cyan-light2 : #8699ad;
+$cyan-active : #b4c9de;
+$grey-light : #EAECF0;
+$grey-light2 : #E1E1E1;
+
+$blue : #1F38C8;
+$green: #00B69B;
+$light-green: #4ED737;
+$pink: #EE368C;
+$sky: #0BB0EE;
+$yellow: #FE7239;
+
+
+
+$color-primary:#716BE8;
+$color-primary-solid:#716BE8;
+
+
+$color-black: #4D515A;
+$color-grey: #E6E8EC;
+$color-soft-grey: #A7ABBA;
+
+$grey-shadow : 0px 12px 24px -4px #919eab1f;
+
+
+.cl-black{
+    color: $black;
+}
+.cl-orange{
+    color: $orange;
+}
+.cl-body{
+    color: $body;
+}
+
+
+
+//Media Query
+
+$max1920: "only screen and (max-width: 1920px)";
+// $max1850: "only screen and (max-width: 1850px)"; 
+$max1800: "only screen and (max-width: 1800px)";
+$max1700: "only screen and (max-width: 1700px)";
+$max1650: "only screen and (max-width: 1650px)";
+$max1399: "only screen and (max-width: 1399.98px)";
+$max1366: "only screen and (max-width: 1366.98px)";
+$max1199: "only screen and (max-width: 1199.98px)";
+$min1199: "only screen and (min-width: 1199.98px)";
+$max991: "only screen and (max-width: 991.98px)";
+$max767: "only screen and (max-width: 767.98px)";
+$max575: "only screen and (max-width: 575.98px)";
+$max480: "only screen and (max-width: 480px)";
+$max374: "only screen and (max-width: 374.98px)";
+

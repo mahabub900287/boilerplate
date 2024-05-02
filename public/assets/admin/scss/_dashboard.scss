@@ -1,0 +1,358 @@
+.ic-dashboard-home {
+    .ic-card-wrapper {
+        @include d-flex;
+        @include flex-wrap(wrap);
+        gap: 24px;
+
+        @media #{$max1650} {
+            gap: 16px;
+        }
+
+        @media #{$max1399} {
+            gap: 10px;
+        }
+
+        .ic-single-card {
+            @include bd-radius(10px);
+            background-color: $white;
+            padding: 18px;
+            width: calc(100% / 7 - 24px + 24px / 7);
+
+            @media #{$max1650} {
+                width: calc(100% / 7 - 16px + 16px / 7);
+                padding: 16px 8px;
+            }
+
+            @media #{$max1399} {
+                width: calc(100% / 7 - 10px + 10px / 7);
+                padding: 16px 6px;
+            }
+
+            @media #{$max1199} {
+                width: calc(100% / 7 - 10px + 10px / 7);
+            }
+
+            @media #{$max991} {
+                width: calc(100% / 5 - 10px + 10px / 5);
+            }
+
+            @media #{$max767} {
+                width: calc(100% / 4 - 10px + 10px / 4);
+            }
+
+            @media #{$max575} {
+                width: calc(100% / 2 - 10px + 10px / 2);
+            }
+
+            @include d-flex;
+            flex-direction: column;
+            @include justify-content(center);
+            @include align-items(center);
+            text-align: center;
+        }
+
+        .ic-top-logo {
+            @include box(36px, 36px);
+            margin-bottom: 5px;
+        }
+
+        .ic-title {
+            color: $black;
+            font-weight: 500;
+            margin-bottom: 4px;
+            font-size: 16px;
+
+            @media #{$max1650} {
+                font-size: 15px;
+            }
+
+            @media #{$max1399} {
+                font-size: 14px;
+            }
+
+            @media #{$max1199} {
+                font-size: 13px;
+            }
+        }
+
+        .ic-count {
+            color: $black;
+            font-weight: 600;
+        }
+
+        // .ic-graph-wrapper {
+        //     @include d-flex;
+        //     @include align-items(center);
+        //     @include flex-wrap(wrap);
+        //     gap: 6px;
+        //     margin-bottom: 10px;
+
+        //     .ic-icon {
+        //         flex: 0 0 auto;
+        //     }
+
+        //     .txt {
+        //         color: #262833;
+        //         font-weight: 600;
+        //         font-size: 14px;
+        //         letter-spacing: 0.14px;
+
+        //         span {
+        //             font-size: 14px;
+        //             color: $body;
+        //             font-weight: 400;
+        //         }
+        //     }
+        // }
+
+
+    }
+
+    .ic_table {
+        border-right: 1px solid #EAECF0;
+        border-left: 1px solid #EAECF0;
+        border-radius: 10px;
+    }
+
+    .ic-report-user-wrapper {
+        @include d-flex;
+        @include flex-wrap(wrap);
+        @include justify-content(space-between);
+        gap: 24px;
+
+        @media #{$max1650} {
+            gap: 16px;
+        }
+
+        @media #{$max1399} {
+            gap: 10px;
+        }
+
+        .ic-report {
+            width: calc(66% - 24px + 24px / 2);
+
+            @media #{$max1650} {
+                width: calc(66% - 16px + 16px / 2);
+            }
+
+            @media #{$max1399} {
+                width: calc(64% - 10px + 10px / 2);
+            }
+
+            @media #{$max991} {
+                width: 100%;
+            }
+
+            @include d-flex;
+            @include flex-direction(column);
+            @include justify-content(space-between);
+
+
+        }
+
+        .ic-user {
+            width: calc(34% - 24px + 24px / 2);
+
+            @media #{$max1650} {
+                width: calc(34% - 16px + 16px / 2);
+            }
+
+            @media #{$max1399} {
+                width: calc(36% - 10px + 10px / 2);
+            }
+
+            @media #{$max991} {
+                width: 100%;
+            }
+
+            .ic-user-header {
+                @include d-flex;
+                @include flex-wrap(wrap);
+                @include justify-content(space-between);
+                @include align-items(center);
+                gap: 10px;
+
+                .ic-badge {
+                    font-weight: 500;
+                    font-size: 20px;
+                    padding: 0px 12px;
+                    @include bd-radius(6px);
+                    @include align-center;
+                    color: $yellow;
+                    background-color: $orange-shade;
+
+                }
+
+
+            }
+        }
+
+        .ic-report-heding {
+            @include d-flex;
+            @include flex-wrap(wrap);
+            @include justify-content(space-between);
+            @include align-items(center);
+            gap: 10px;
+
+            .ic-right-content {
+                @include d-flex;
+                @include flex-wrap(wrap);
+                @include align-items(center);
+                gap: 20px;
+
+                .ic-item {
+                    font-size: 14px;
+                    font-weight: 600;
+                    color: #262833;
+
+                    &.after {
+                        color: $body;
+
+                        &::before {
+                            display: inline-block;
+                            content: '';
+                            @include bd-radius(50%);
+                            height: 8px;
+                            width: 8px;
+                            margin-right: 6px;
+
+                        }
+
+
+                    }
+
+                    &.subscription {
+                        &::before {
+                            background-color: #3D42AA;
+                        }
+                    }
+
+                    &.revenue {
+                        &::before {
+                            background-color: $orange;
+                        }
+                    }
+                }
+            }
+        }
+
+        .ic-user-header {
+            @include d-flex;
+            @include flex-wrap(wrap);
+            @include justify-content(space-between);
+            @include align-items(center);
+            gap: 10px;
+
+            .ic-badge {
+                font-weight: 500;
+                font-size: 20px;
+                padding: 0px 12px;
+                @include bd-radius(6px);
+                @include align-center;
+                color: $yellow;
+                background-color: $orange-shade;
+
+            }
+
+
+        }
+
+        .see-link {
+            font-weight: 500;
+            font-size: 13.5px;
+            padding: 0px;
+            @include bd-radius(6px);
+            @include align-center;
+            color: $yellow;
+            background-color: $white;
+            @include transition-linear(0.2s);
+
+            &:hover {
+                color: #c04411;
+            }
+
+            &.with-bg {
+                padding: 10px 12px;
+                background-color: $orange-shade;
+            }
+        }
+
+        .ic-common {
+            @include bd-radius(10px);
+            background-color: $white;
+            padding: 24px;
+        }
+    }
+
+    #chart {
+
+        .apexcharts-toolbar,
+        .apexcharts-legend {
+            display: none;
+            color: #b84644;
+        }
+
+        .apexcharts-tooltip.apexcharts-theme-light {
+            border: 1px px solid #141736;
+            background: #141736;
+            color: white;
+
+            .apexcharts-tooltip-title {
+                background: #141736;
+                color: white;
+                border-bottom: 1px solid #EAECF0;
+            }
+        }
+    }
+
+    .bootstrap-select {
+        width: 100% !important;
+
+        .dropdown-toggle {
+            gap: 10px;
+            height: 33px;
+            color: $body;
+            background-color: $white;
+            border: 1px solid #D0D5DD;
+            font-size: 14px;
+            font-weight: 500;
+            text-transform: capitalize;
+            cursor: pointer;
+            @include transition-linear(0.2s);
+            @include bd-radius(6px);
+
+            &:focus {
+                outline: none !important;
+                box-shadow: none !important;
+            }
+
+
+
+
+            .filter-option {
+                display: flex;
+                align-items: center;
+            }
+
+
+        }
+
+        .dropdown-item {
+            &.active {
+                color: $white;
+                background-color: $orange;
+            }
+
+            &:active {
+                color: $white;
+                background-color: $orange;
+            }
+        }
+    }
+
+    .chart-content.expense {
+        margin: auto;
+
+    }
+
+}

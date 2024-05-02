@@ -1,0 +1,167 @@
+.ic-button {
+
+  cursor: pointer;
+  @include bd-radius(8px);
+  padding: 8px 16px 7px;
+  gap: 5px;
+  @include d-flex;
+  @include align-items(center);
+  font-weight: 500;
+  font-size: 14px;
+  @include transition-linear(0.3s);
+
+  span {
+    font-weight: 500;
+    font-size: 14px;
+
+    @media #{$max1199} {
+      font-size: 13px;
+    }
+  }
+
+  i {
+    font-size: 16px;
+  }
+
+  @media #{$max1399} {
+    padding: 6px 14px 5px;
+  }
+
+  @media #{$max1199} {
+    font-size: 13px;
+    padding: 5px 12px 4px;
+  }
+
+  @media #{$max767} {
+    font-size: 12px;
+    padding: 4px 10px;
+  }
+
+  &.primary {
+    color: $white;
+    background: $orange;
+    border: 1px solid $orange;
+
+    &:hover {
+      color: $orange;
+      background: $white;
+    }
+  }
+
+  &.grey {
+    color: $white;
+    background: $body;
+    border: 1px solid $body;
+
+    &:hover {
+      color: $body;
+      background: $white;
+
+    }
+  }
+
+  &.white {
+    color: $black;
+    background: $white;
+    border: 1px solid #D0D5DD;
+
+    &:hover {
+      color: $white;
+      background: $black;
+    }
+  }
+
+  &.orange {
+    color: $black;
+    background: $orange-light;
+    border: 1px solid $orange-light;
+
+    &:hover {
+      color: $orange-light;
+      background: $black;
+      border-color: $black;
+    }
+  }
+
+
+}
+
+
+
+// frontend button
+.ic-btn {
+  height: 44px;
+  padding: 0px 25px;
+  @include align-center;
+  @include bd-radius(8px);
+
+
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 500;
+  @include transition(0.5s);
+
+  @media #{$max1399} {
+    font-size: 15px;
+    height: 42px;
+    padding: 0px 18px;
+  }
+
+  @media #{$max1199} {
+    font-size: 14px;
+    height: 40px;
+    padding: 0px 15px;
+  }
+
+  @media #{$max991} {
+    font-size: 13px;
+    height: 38px;
+  }
+
+  @media #{$max767} {
+    height: 37px;
+  }
+
+  color: $orange;
+  background-color: $white;
+  border: 1px solid $white;
+
+  &:hover {
+    color: $white;
+    background-color: transparent;
+    border-color: $white;
+  }
+
+  &.outline {
+    color: $white;
+    background-color: transparent;
+    border: 1px solid $white;
+
+    &:hover {
+      color: $orange;
+      background-color: $white;
+    }
+  }
+
+  &.primary {
+    color: $white;
+    background-color: $orange;
+    border: 1px solid $orange;
+
+    &:hover {
+      color: $orange;
+      background-color: $white;
+      // border-color: white;
+    }
+  }
+
+
+
+}
+
+
+.form-control {
+  &:focus {
+    box-shadow: none;
+  }
+}

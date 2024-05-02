@@ -1,0 +1,628 @@
+.ic_form {
+    .form-label {
+        font-size: 14px;
+        color: $body;
+        font-weight: 500;
+        margin-bottom: 6px;
+
+        @media #{$max1199} {
+            font-size: 13px;
+        }
+    }
+
+    .form-control {
+        padding-top: 0.5rem;
+        padding-right: 0.75rem;
+        padding-bottom: 0.5rem;
+        padding-left: 0.75rem;
+
+        font-size: 16px;
+        font-weight: 400;
+        height: 44px;
+        background-color: white;
+        border: 1px solid #D0D5DD;
+        color: $body;
+        @include box-shadow2(none);
+        @include bd-radius(6px);
+        box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+
+        @media #{$max1399} {
+            font-size: 15px;
+            height: 42px;
+        }
+
+        @media #{$max1199} {
+            font-size: 14px;
+            height: 40px;
+        }
+
+        @media #{$max991} {
+            font-size: 13px;
+            height: 38px;
+        }
+
+        @media #{$max767} {
+            height: 37px;
+        }
+
+        &:focus {
+            border: 1px solid $yellow;
+            box-shadow: none;
+            outline: 0;
+        }
+
+        &.ic-textarea {
+            height: 110px;
+            resize: none;
+
+            @media #{$max1399} {
+                height: 100px;
+            }
+
+            @media #{$max1199} {
+                height: 90px;
+            }
+
+            @media #{$max991} {
+                height: 80px;
+            }
+
+            @media #{$max767} {
+                height: 70px;
+            }
+        }
+    }
+
+    .ic-check {
+        height: 44px;
+        gap: 8px;
+        @include d-flex;
+        @include align-items(center);
+
+        @media #{$max1399} {
+            height: 42px;
+        }
+
+        @media #{$max1199} {
+            height: 40px;
+        }
+
+        @media #{$max991} {
+            height: 38px;
+        }
+
+        @media #{$max767} {
+            height: 37px;
+        }
+
+        @media #{$max575} {
+            height: unset;
+        }
+
+        input {
+            cursor: pointer;
+            height: 22px;
+            width: 36px;
+            margin-top: 0;
+
+            &:checked {
+
+                background-color: $orange;
+                border-color: $orange;
+                background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e") !important;
+            }
+
+            &:focus {
+                border-color: #D0D5DD;
+                box-shadow: none;
+                background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%280, 0, 0, 0.25%29'/%3e%3c/svg%3e");
+            }
+        }
+
+        &.h-unset {
+            height: unset;
+        }
+    }
+
+    textarea {
+
+        &:focus {
+            border: 1px solid $yellow;
+            box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+        }
+    }
+
+    .bootstrap-select {
+        width: 100% !important;
+
+        .dropdown-toggle {
+            gap: 10px;
+            height: 44px;
+            color: $body;
+            background-color: $white;
+            border: 1px solid #D0D5DD;
+            font-size: 16px;
+            font-weight: 400;
+            text-transform: capitalize;
+            cursor: pointer;
+            @include transition-linear(0.2s);
+            @include bd-radius(6px);
+
+            @media #{$max1399} {
+                font-size: 15px;
+                height: 42px;
+            }
+
+            @media #{$max1199} {
+                font-size: 14px;
+                height: 40px;
+            }
+
+            @media #{$max991} {
+                font-size: 13px;
+                height: 38px;
+            }
+
+            @media #{$max767} {
+                height: 37px;
+            }
+
+            &:focus {
+                outline: none !important;
+                box-shadow: none !important;
+            }
+
+
+
+
+            .filter-option {
+                display: flex;
+                align-items: center;
+            }
+
+
+        }
+
+        .dropdown-item {
+            &.active {
+                color: $white;
+                background-color: $orange;
+            }
+
+            &:active {
+                color: $white;
+                background-color: $orange;
+            }
+        }
+    }
+
+    .mb_20 {
+        @media #{$max1399} {
+            margin-bottom: 18px;
+        }
+
+        @media #{$max1199} {
+            margin-bottom: 16px;
+        }
+
+        @media #{$max991} {
+            margin-bottom: 14px;
+        }
+
+        @media #{$max767} {
+            margin-bottom: 12px;
+        }
+
+        @media #{$max575} {
+            margin-bottom: 10px;
+        }
+    }
+
+
+
+    .form-check-label {
+        font-size: 14px;
+        font-weight: 400;
+        color: $body;
+        cursor: pointer;
+
+        @media #{$max1199} {
+            font-size: 13px;
+        }
+    }
+
+    .form-check-input {
+        cursor: pointer;
+        width: 16px;
+        height: 16px;
+
+        @media #{$max1399} {
+            width: 14px;
+            height: 14px;
+            margin-top: 6px;
+        }
+
+        &:focus {
+            box-shadow: none;
+            border-color: #00000040;
+        }
+
+        &:checked {
+            background-color: $orange;
+            border-color: $orange;
+        }
+    }
+
+    .input-icon-wrapper {
+        position: relative;
+
+        .password-toggler {
+            position: absolute;
+            cursor: pointer;
+            right: 10px;
+            bottom: 50%;
+            transform: translateY(50%);
+            @include inline-flex;
+
+            i {
+                color: $body;
+            }
+        }
+    }
+
+    .select2.select2-container {
+        width: 100% !important;
+
+        .select2-selection {
+            padding-top: 0.5rem;
+            padding-right: 0.75rem;
+            padding-bottom: 0.5rem;
+            padding-left: 0.75rem;
+
+            font-size: 16px;
+            font-weight: 400;
+            height: 44px;
+            background-color: white;
+            border: 1px solid #D0D5DD;
+            color: $body;
+            @include box-shadow2(none);
+            @include bd-radius(6px);
+            box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+
+            position: relative;
+
+            @media #{$max1399} {
+                font-size: 15px;
+                height: 42px;
+            }
+
+            @media #{$max1199} {
+                font-size: 14px;
+                height: 40px;
+            }
+
+            @media #{$max991} {
+                font-size: 13px;
+                height: 38px;
+            }
+
+            @media #{$max767} {
+                height: 37px;
+            }
+
+            &:focus {
+                border: 1px solid $yellow;
+                box-shadow: none;
+                outline: 0;
+            }
+
+            .select2-selection__arrow {
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+
+
+
+
+}
+
+.err-txt {
+    font-size: 12px;
+    color: red;
+    font-style: italic;
+
+    &.black {
+        color: $black;
+    }
+}
+
+.ic-button-wrapper {
+    padding-top: 16px;
+    @include d-flex;
+    @include justify-content(space-between);
+    @include align-items(center);
+    gap: 10px;
+    position: relative;
+
+    &::after {
+        content: "";
+        background-color: $grey-light;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 105%;
+        height: 1px;
+    }
+}
+
+.right-button-group {
+    @include d-flex;
+    gap: 10px;
+    @include align-items(center);
+}
+
+.ic-input-field-wrapper {
+    @include d-flex;
+    font-size: 16px;
+    font-weight: 400;
+    height: 44px;
+    background-color: white;
+    border: 1px solid #D0D5DD;
+    color: $body;
+    @include bd-radius(6px);
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+
+    @media #{$max1399} {
+        font-size: 15px;
+        height: 42px;
+    }
+
+    @media #{$max1199} {
+        font-size: 14px;
+        height: 40px;
+    }
+
+    @media #{$max991} {
+        font-size: 13px;
+        height: 38px;
+    }
+
+    @media #{$max767} {
+        height: 37px;
+    }
+
+    &:not(:last-child) {
+        margin-bottom: 20px;
+
+        @media #{$max1399} {
+            margin-bottom: 19px;
+        }
+
+        @media #{$max1199} {
+            margin-bottom: 18px;
+        }
+
+        @media #{$max991} {
+            margin-bottom: 17px;
+        }
+
+        @media #{$max767} {
+            margin-bottom: 16px;
+        }
+
+        @media #{$max575} {
+            margin-bottom: 14px;
+        }
+    }
+
+    .input-item {
+        width: calc(100% / 3);
+
+        &:not(:last-child) {
+            border-right: 1px solid #D0D5DD;
+        }
+
+    }
+
+    .heading {
+        padding: 6px 12px;
+    }
+
+    .form-control {
+        height: 100%;
+        // padding: 0;
+        border: none;
+        box-shadow: none;
+
+        &:focus {
+            box-shadow: none;
+            border: none;
+        }
+    }
+
+    .icons-selector {
+        text-align: right;
+        display: block;
+        height: 100%;
+
+        .selector {
+            height: 100%;
+            border: none;
+        }
+
+        .selector-button {
+            border-radius: 0 6px 6px 0;
+        }
+
+        .selector-popup {
+            min-width: 345px;
+        }
+
+        .selected-icon {
+            @include align-center;
+        }
+
+        .selector-popup-wrap {
+            left: unset;
+            right: 5px;
+        }
+    }
+}
+
+.ic-setting-file-upload {
+
+
+    input::file-selector-button {
+        display: none;
+    }
+
+    input[type='file'] {
+        line-height: 1.8;
+    }
+
+    input::placeholder {
+        font-size: 14px;
+        color: $body;
+
+        @media #{$max1399} {
+            font-size: 13px;
+        }
+
+        @media #{$max1199} {
+            font-size: 12px;
+        }
+
+        @media #{$max991} {
+            font-size: 11px;
+        }
+    }
+
+    .input-group-text {
+        background: rgba(255, 108, 64, 0.10);
+        color: $orange;
+        font-weight: 500;
+        padding: 8px;
+
+        @media #{$max1399} {
+            font-size: 14px;
+        }
+
+        @media #{$max1199} {
+            font-size: 13px;
+        }
+
+        @media #{$max991} {
+            font-size: 12px;
+        }
+    }
+}
+
+
+
+.ic-file-upload-with-photo {
+    &.ic-profile-image {
+
+        @include d-flex;
+        @include align-items(center);
+        @include justify-content(space-between);
+        gap: 8px;
+
+        @media #{$max575} {
+            @include flex-wrap(wrap);
+        }
+
+        .ic-image {
+            display: block;
+            margin: 0 auto;
+
+            img {
+                @include box(64px, 64px);
+                @include bd-radius(50%);
+                object-fit: cover;
+
+                @media #{$max1399} {
+                    @include box(60px, 60px);
+                }
+
+                @media #{$max1199} {
+                    @include box(58px, 58px);
+                }
+
+                @media #{$max991} {
+                    @include box(56px, 56px);
+                }
+            }
+        }
+
+
+        .ic-setting-file-upload {
+
+
+            input::file-selector-button {
+                display: none;
+            }
+
+            input[type='file'] {
+                line-height: 1.8;
+            }
+
+            width: calc(100% - 64px);
+
+            @media #{$max1399} {
+                width: calc(100% - 60px);
+            }
+
+            @media #{$max1199} {
+                width: calc(100% - 58px);
+            }
+
+            @media #{$max991} {
+                width: calc(100% - 56px);
+            }
+
+            @media #{$max575} {
+                width: 100%;
+            }
+
+            input::placeholder {
+                font-size: 14px;
+                color: $body;
+
+                @media #{$max1399} {
+                    font-size: 13px;
+                }
+
+                @media #{$max1199} {
+                    font-size: 12px;
+                }
+
+                @media #{$max991} {
+                    font-size: 11px;
+                }
+            }
+
+            .input-group-text {
+                background: rgba(255, 108, 64, 0.10);
+                color: $orange;
+                font-weight: 500;
+                padding: 8px;
+
+                @media #{$max1399} {
+                    font-size: 14px;
+                }
+
+                @media #{$max1199} {
+                    font-size: 13px;
+                }
+
+                @media #{$max991} {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+}

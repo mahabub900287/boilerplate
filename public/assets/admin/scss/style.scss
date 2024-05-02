@@ -1,0 +1,33 @@
+// Abstract Styles    
+
+@import './abstracts/mixins';
+@import './abstracts/variable';
+
+//Base Styles
+
+@import './base/global';
+@import './base/reset';
+@import './base/typhography';
+
+//Component
+
+@import './component/breadcumb';
+@import './component/button';
+@import './component/forms';
+@import './component/table';
+@import './component/header';
+@import './component/_footer';
+
+// pages
+@import './pages/home';
+@import './pages/inventory';
+
+
+
+
+
+// student dashboard
+@import './menubar';
+@import './commonUser';
+@import './dashboard';
+@import './landing';

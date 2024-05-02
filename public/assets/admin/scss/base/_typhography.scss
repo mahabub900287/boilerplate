@@ -1,0 +1,161 @@
+/**Font Size & Font Family**/
+
+// ------------------
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0px;
+    text-transform: capitalize;
+}
+
+h1 {
+    font-size: 38px;
+    font-weight: 700;
+    color: $black;
+    line-height: 50px;
+
+    @media #{$max1650} {
+        font-size: 36px;
+        line-height: 48px;
+    }
+    @media #{$max1399} {
+        font-size: 34px;
+        line-height: 45px;
+    }
+    @media #{$max1199} {
+        font-size: 30px;
+        line-height: normal;
+    }
+    @media #{$max991} {
+        font-size: 25px;
+    }
+    @media #{$max767} {
+        font-size: 23px;
+    }
+    @media #{$max575} {
+        font-size: 20px;
+    }
+  
+    span {
+      @extend h1;
+    }
+  }
+
+h2 {
+    font-size: 30px;
+    font-weight: 600;
+    color: $black;
+
+    @media #{$max1650} {
+        font-size: 28px;
+    }
+    @media #{$max1399} {
+        font-size: 24px;
+    }
+    @media #{$max1199} {
+        font-size: 22px;
+    }
+    @media #{$max991} {
+        font-size: 20px;
+    }
+    @media #{$max767} {
+        font-size: 18px;
+    }
+    
+    span {
+        @extend h2;
+    }
+
+}
+h3 {
+    font-size: 27px;
+    font-weight: 600;
+    color: $black;
+    @media #{$max1650} {
+        font-size: 25px;
+    }
+    @media #{$max1399} {
+        font-size: 23px;
+    }
+    @media #{$max1199} {
+        font-size: 21px;
+    }
+    @media #{$max991} {
+        font-size: 19px;
+    }
+    @media #{$max767} {
+        font-size: 17px;
+    }
+    span {
+        @extend h3;
+    }
+}
+
+h4 {
+    font-size: 24px;
+    font-weight: 600;
+    color: $black;
+    @media #{$max1650} {
+        font-size: 22px;
+    }
+    @media #{$max1399} {
+        font-size: 20px;
+    }
+    @media #{$max1199} {
+        font-size: 18px;
+    }
+    @media #{$max991} {
+        font-size: 16px;
+    }
+    @media #{$max767} {
+        font-size: 15px;
+    }
+    span {
+        @extend h4;
+    }
+}
+
+h5 {
+    font-size: 18px;
+    font-weight: 600;
+    color: $black;
+    @media #{$max1650} {
+        font-size: 17px;
+    }
+    @media #{$max1399} {
+        font-size: 16px;
+    }
+    @media #{$max1199} {
+        font-size: 15px;
+    }
+    @media #{$max991} {
+        font-size: 14px;
+    }
+    span {
+        @extend h5;
+    }
+}
+
+h6 {
+    font-size: 16px;
+    font-weight: 600;
+    color: $black;
+    @media #{$max1399} {
+        font-size: 15px;
+    }
+
+    @media #{$max1199} {
+        font-size: 14px;
+    }
+
+    @media #{$max991} {
+        font-size: 13px;
+    }
+    span {
+        @extend h6;
+    }
+}
