@@ -54,10 +54,10 @@ class AdminService extends BaseService
                 $user = parent::storeOrUpdate($value, $id);
             }
             if ($id == null) {
-                $user->assignRole([$role_id]);
+                $user->assignRole((int)$role_id);
             } else {
                 $user = $this->model::find($id);
-                $user->syncRoles([$role_id]);
+                $user->syncRoles((int)$role_id);
             }
             return $user;
         } catch (\Exception $e) {

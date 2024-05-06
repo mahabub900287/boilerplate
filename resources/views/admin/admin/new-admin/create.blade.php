@@ -76,7 +76,7 @@
                                 <select class="ic-select" name="role" aria-label="Select Role"
                                     placeholder="Select Role">
                                     @forelse ($roles as $role)
-                                        <option value="{{ $role->name }}"
+                                        <option value="{{ $role->id }}"
                                             {{ old('role') == $role->id ? 'selected' : '' }}>{{ $role->name }}
                                         </option>
                                     @empty
